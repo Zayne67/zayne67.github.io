@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JR DESIGN</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.webp">
+    
+    <!-- Online Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+
+    <!-- Offline Css -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="h-100 w-100">
+    
+    <!-- Preloader -->
+    <div class="load-img" style="display: none;">
+        <img src="img/header1.webp" alt="">
+        <img src="img/header2.webp" alt="">
+        <img src="img/header3.webp" alt="">
+        <img src="img/header4.webp" alt="">
+        <img src="img/header5.webp" alt="">
+    </div>
+
+    <!-- Loading Splash time -->
+    <div class="loading-screen" style="display: none;">
+        <img src="img/jrintro.webp" width="400px">
+        <div class="fill_1"></div>
+        <div class="fill_2"></div>
+        <div class="first">
+        </div>
+    </div>
+
+    <!-- Custom Cursor-->
+    <div class="cursor"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <div class="row align-items-center w-100">
+                <div class="col-4">
+                    <p class="wto">
+                        <span>EN</span><span>/</span><span>AR</span>  
+                    </p>
+                </div>
+                <div class="col-4 text-center">
+                    <img onclick="home()" src="img/jrlogo.webp" class="mx-auto d-block">
+                </div>
+                <div class="col-4 text-end">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-end text-bg-dark h-100 w-100" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" aria-modal="true" role="dialog">
+                    <div class="fluid-container h-100 w-100">
+                        <div class="row h-100 align-items-start">
+                            <div class="col-6 h-100">
+                                <img id="menu" src="img/menu-home.webp">
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
+                                </button>
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="about.html">
+                                            <h2 class="m05a">
+                                                <span onmouseover="about()">
+                                                    ABOUT
+                                                </span>
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="project.html">
+                                            <h2 class="m05a">
+                                                <span onmouseover="project()">
+                                                    PROJECTS
+                                                </span>
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="service.html">
+                                            <h2 class="m05a">
+                                                <span onmouseover="service()">
+                                                    SERVICES
+                                                </span>
+                                            </h2>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">
+                                            <h2 class="m05a">
+                                                <span onmouseover="contact()">
+                                                    CONTACT
+                                                </span>
+                                            </h2>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3 text-end">
+                                <ul>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 15 15"><g transform="rotate(90 7.5 7.5)"><path fill="none" stroke="black" d="m2.5 1.5l12 12m-12 0l12-12"/></g></svg>
+                                </button>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+              </div>
+        </div>
+    </nav>
+
+    <!-- Content Wrapper-->
+    <div class="h-100 w-100">
+
+        <!-- Introduction Contents-->
+        <div class="fluid-container introduction h-100">
+            <intro class="container intro-desc align-items-center h-100">
+                <div class="text-center">
+                    <div>
+                        <h1 class="wt">
+                            <span>Your</span>
+                            <span>Premier</span>
+                            <span>Destination</span>
+                            <span>for</span>
+                            <span>Architectural</span><br>
+                            <span>Excellence</span>
+                            <span>and</span>
+                            <span>Interior</span>
+                            <span>Innovation</span>
+                          </h1>
+                    </div>
+                    <div>
+                        <p class="wt">
+                            <span>
+                                Elevate your living spaces with our bespoke architectural, interior design and consultancy services.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </intro>
+        </div>
+
+
+
+
+
+
+
+        <!-- Description When they Started -->
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-md-6 col-12">
+                    <div data-aos="fade-right">
+                        <p class="m2b brt">
+                            <span>
+                                Elevating Interiors Since 1999
+                            </span>
+                        </p>
+                    </div>
+                    <div data-aos="fade-right">
+                        <h1 class="m05tb">
+                            <span>
+                                From Dream Interiors to Furniture,<br>
+                                We've Got You Covered!
+                            </span>
+                        </h1>
+                    </div>
+                    <div data-aos="fade-right">
+                        <p class="bto m1tb">
+                            <span data-aos="fade-right">
+                                JOGA RAM GROUP was formed in the year 1999 with the sole purpose of establishing a world-class joinery company in the region catering to the various needs of the discerning and quality-conscious clientele.
+                            </span>
+                        </p>
+                        <p class="bto m1tb">
+                            <span data-aos="fade-right">
+                                Since 1999, the company has grown many folds under the able leadership of Mr. Joga Ram and ever since, it has served the people of the Middle East to their fullest satisfaction.
+                            </span>
+                        </p>
+                        <p class="bto m1tb">
+                            <span data-aos="fade-right">
+                                Its numerous and varied successfully completed projects are ample proof of the company’s performance in the areas of joinery works, interior design & building contracting and trading.
+                            </span>
+                        </p>
+                    </div>
+                    <a href="#">
+                        <div data-aos="fade-right" class="d-flex align-items-center justify-content-start">
+                            <div class="link text-start">
+                                <p class="brt m05tb">
+                                    LEARN MORE
+                                </p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g transform="rotate(90 8 8)"><path fill="currentColor" fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/></g></svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 align-items-center sm-hidden">
+                    <div data-aos="fade-left" class="">
+                        <img src="img/Renovation1.webp" class="img" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Video -->
+        <div class="container-fluid h-100 w-100 video">
+            <div>
+                <figure>
+
+                </figure>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Activities Subdivision -->
+        <div class="container h-100 w-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-6 text-center">
+                    <p data-aos="fade-right">ACTIVITIES SUBDIVISION</p>
+                    <h3 data-aos="fade-right">
+                        <span onmouseover="residential()">
+                            Residential
+                        </span>
+                    </h3>
+                    <h3 data-aos="fade-right">
+                        <span onmouseover="commercial()">
+                            Commercial
+                        </span>
+                    </h3>
+                    <h3 data-aos="fade-right">
+                        <span onmouseover="hospitality()">
+                            Hospitality
+                        </span>
+                    </h3>
+                    <h3 data-aos="fade-right">
+                        <span onmouseover="office()">
+                            Retail & Office
+                        </span>
+                    </h3>
+                    <h3 data-aos="fade-right">
+                        <span onmouseover="health()">
+                            Health Sector
+                        </span>
+                    </h3>
+                    <h3 data-aos="fade-right">
+                        <span onmouseover="educational()">
+                            Educational
+                        </span>
+                    </h3>
+                </div>
+                <div class="col-6 sm-hidden" data-aos="fade-left">
+                    <figure>
+                        <img id="subdivision" src="img/actsub1.webp" class="img" loading="lazy">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container">
+          </div>
+
+        <!-- Description for Residential - Restaurant -->
+        <div class="fluid-container h-100 w-100 bg-b">
+            <div class="container h-100">
+                <div class="row w-100 align-items-center align-items-left">
+                    <div class="col-12 text-end link-view">
+                        <a href="project.html">
+                            <h2 class="wt">
+                                View All
+                            </h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="row h-100 align-items-center color-w img-project" data-aos="fade-up">
+                    <div class="box col-4">
+                        <div class="imgBx">
+                          <img src="img/project1.webp">
+                        </div>
+                        <div class="content">
+                          <div>
+                            <h2>
+                                Villa Al Tayer
+                            </h2>
+                            <p>
+                                Residential
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="box col-4">
+                        <div class="imgBx">
+                          <img src="img/project2.webp">
+                        </div>
+                        <div class="content">
+                          <div>
+                            <h2>
+                                Dubai Police Academy
+                            </h2>
+                            <p>
+                                Government
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="box col-4">
+                        <div class="imgBx">
+                          <img src="img/project3.webp">
+                        </div>
+                        <div class="content">
+                          <div>
+                            <h2>
+                                Corporate HQ
+                            </h2>
+                            <p>
+                                Corporate
+                            </p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Clientele -->
+        <div class="fluid-container h-50">
+            <div class="row h-100 align-items-center text-center">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <h1 class="font-xl text-center">
+                            <span>Clientele</span>
+                        </h1>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="carousel container" data-flickity='{ "wrapAround": true, "autoPlay": true}'>
+                            <div class="carousel-cell">
+                                <img src="img/cliente1.webp" class="cimg">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="img/cliente2.webp" class="cimg">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="img/cliente3.webp" class="cimg">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="img/cliente4.webp" class="cimg">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="img/cliente5.webp" class="cimg">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="img/cliente6.webp" class="cimg">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="img/cliente7.webp" class="cimg">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+        <!-- Contact Us -->
+        <div class="fluid-container h-100 pbg">
+            <div class="row h-100 align-items-center">
+                <div class="row align-items-center">
+                    <div class="container align-items-center text-center">
+                        <div class="col-12 text-start" data-aos="fade-right">
+                                <a href="contact.html">
+                                    <h2>
+                                        <span class="wt contactus fwt">
+                                            Contact Us
+                                        </span>
+                                    </h2>
+                                </a>
+                        </div>
+                        <div class="col-6 text-start wt fwt m2" data-aos="fade-right">
+                            <p>
+                                <span>
+                                    Turning Dreams into Stunning Interiors: Where Imagination Meets Precision
+                                    JR Design is your gateway to a world of exceptional interior design. With a passion for crafting unique and functional spaces, we transform your vision into reality. Our team of skilled designers brings creativity and precision to every project, from concept to completion.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Link -->
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="row align-items-center">
+                    <div class="row text-start">
+                        <div class="col-6">
+                            <img src="img/footer.webp" alt="" style="height: 5vh;">
+                        </div>
+                        <div class="col-2">
+                            <a href="about.html">
+                                <p class="m05a">
+                                    ABOUT
+                                </p>
+                            </a>
+                            <a href="project.html">
+                                <p class="m05a">
+                                    PROJECTS
+                                </p>
+                            </a>
+                            <a href="service.html">
+                                <p class="m05a">
+                                    SERVICES
+                                </p>
+                            </a>
+                            <a href="contact.html">
+                                <p class="m05a">
+                                    CONTACT
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <p class="m05a">
+                                ADDRESS
+                            </p>
+                            <p class="m05a">
+                                52, 22nd StreetAl Quoz Industrial Area 2, Dubai
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p class="m05a">
+                                EMAIL
+                            </p>
+                            <p class="m05a">
+                                info@jrdesign.ae
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col-6">
+                            <p class="m05a">
+                                © 2023 BY JRDESIGN
+                            </p>
+                        </div>
+                        <div class="col-1">
+                            <a href="about.html">
+                                <img src="img/youtube.webp" alt="" style="height: 5vh;">
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://www.linkedin.com/company/jr-design-uae/about/">
+                                <img src="img/linkedin.webp" alt="" style="height: 5vh;">
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://www.facebook.com/p/JR-Design-100067212375455/">
+                                <img src="img/facebook.webp" alt="" style="height: 5vh;">
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://www.instagram.com/jrdesigndxb/">
+                                <img src="img/instagram.webp" alt="" style="height: 5vh;">
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <!-- 
+                            <a href="https://mediaonclick.me/">
+                                <p class="m05a">
+                                    Made by MediaOnClick
+                                </p>
+                            </a> 
+                             -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+    </body>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        
+        window.addEventListener("load", function() {
+        document.querySelector(".loading-screen").style.display = "none";
+        });
+        // Loading Screen
+        const loadingScreen = document.querySelector('.loading-screen');
+
+        function showLoadingScreen() {
+            loadingScreen.style.display = 'flex';
+        }
+
+        function hideLoadingScreen() {
+            loadingScreen.style.display = 'none';
+        }
+
+        // Example usage:
+        showLoadingScreen();
+        setTimeout(hideLoadingScreen, 5000); // Hide loading screen after 5 Seconds / 5000
+        
+        // Doesnt allow to scroll down while loading screeen is active
+        window.addEventListener('scroll', function() {
+        if (loadingScreen.style.display === 'flex') {
+            window.scrollTo(0, 0);
+        }
+        });
+
+        // Variable for Image
+        var image = document.querySelector('#subdivision');
+        var menu = document.querySelector('#menu');
+
+        // Changine Image on Menu
+        function about() {
+        menu.src = 'img/menu-about.webp';
+        }
+        function project() {
+        menu.src = 'img/menu-project.webp';
+        }
+        function service() {
+        menu.src = 'img/menu-service.webp';
+        }
+        function contact() {
+        menu.src = 'img/menu-contact.webp';
+        }
+
+        // Changing Image on hover
+        function residential() {
+        image.src = 'img/actsub1.webp';
+        }
+        function commercial() {
+        image.src = 'img/actsub2.webp';
+        }
+        function hospitality() {
+        image.src = 'img/actsub3.webp';
+        }
+        function office() {
+        image.src = 'img/actsub4.webp';
+        }
+        function health() {
+        image.src = 'img/actsub5.webp';
+        }
+        function educational() {
+        image.src = 'img/actsub6.webp';
+        }
+
+        // Link on Click
+        function home(){
+            window.open('index.html', '_self')
+        }
+        
+        document.querySelector('.img-link').addEventListener('click', function() {
+            window.open('index.html', '_self');
+        });
+    </script>
+</body>
+</html>
