@@ -49,7 +49,7 @@
             <div class="row align-items-center w-100">
                 <div class="col-4">
                     <p class="wto">
-                        <span>EN</span><span>/</span><span>AR</span>  
+                        <span>EN</span><span>&#160|&#160</span><span>AR</span>  
                     </p>
                 </div>
                 <div class="col-4 text-center">
@@ -61,61 +61,91 @@
                       </button>
                 </div>
             </div>
-            <div class="offcanvas offcanvas-end text-bg-dark h-100 w-100" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" aria-modal="true" role="dialog">
-                    <div class="fluid-container h-100 w-100">
+            <div class="offcanvas offcanvas-end text-bg-light h-100 w-100" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" aria-modal="true" role="dialog">
+                    <div class="fluid-container h-100">
                         <div class="row h-100 align-items-start">
+                            <div class="col-6">
+                                <img id="menu" src="img/menu-home.webp" class="img2">
+                            </div>
                             <div class="col-6 h-100">
-                                <img id="menu" src="img/menu-home.webp">
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
-                                </button>
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="about.html">
-                                            <h2 class="m05a">
-                                                <span onmouseover="about()">
-                                                    ABOUT
-                                                </span>
-                                            </h2>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="project.html">
-                                            <h2 class="m05a">
-                                                <span onmouseover="project()">
-                                                    PROJECTS
-                                                </span>
-                                            </h2>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="service.html">
-                                            <h2 class="m05a">
-                                                <span onmouseover="service()">
-                                                    SERVICES
-                                                </span>
-                                            </h2>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">
-                                            <h2 class="m05a">
-                                                <span onmouseover="contact()">
-                                                    CONTACT
-                                                </span>
-                                            </h2>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-3 text-end">
-                                <ul>
-                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 15 15"><g transform="rotate(90 7.5 7.5)"><path fill="none" stroke="black" d="m2.5 1.5l12 12m-12 0l12-12"/></g></svg>
-                                </button>
-                                </ul>
-                                
+                                <div class="row h-100">
+                                    <div class="col-6 align-self-end">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                            <li class="nav-item">
+                                                <div class="nav-link">
+                                                    <h1 class="m05a bto">
+                                                        <span onmouseover="about()">
+                                                            <a href="about.html">
+                                                                ABOUT
+                                                            </a>
+                                                        </span>
+                                                    </h1>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <div class="nav-link">
+                                                    <h1 class="m05a bto">
+                                                        <span onmouseover="project()">
+                                                            <a href="project.html">
+                                                                PROJECTS
+                                                            </a>
+                                                        </span>
+                                                    </h1>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <div class="nav-link">
+                                                    <h1 class="m05a bto">
+                                                        <span onmouseover="service()">
+                                                            <a href="service.html">
+                                                                SERVICES
+                                                            </a>
+                                                        </span>
+                                                    </h1>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <div class="nav-link">
+                                                    <h1 class="m05a bto">
+                                                        <span onmouseover="contact()">
+                                                            <a href="contact.html">
+                                                                CONTACT
+                                                            </a>
+                                                        </span>
+                                                    </h1>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 align-items-left text-end">
+                                            <div class="h-50">
+                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
+                                                    <p class="d-flex align-items-center m3a">
+                                                        <span>
+                                                            Close
+                                                        </span>    
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256"><path fill="currentColor" d="M162.83 98.83L133.66 128l29.17 29.17a4 4 0 0 1-5.66 5.66L128 133.66l-29.17 29.17a4 4 0 0 1-5.66-5.66L122.34 128L93.17 98.83a4 4 0 0 1 5.66-5.66L128 122.34l29.17-29.17a4 4 0 1 1 5.66 5.66ZM228 128A100 100 0 1 1 128 28a100.11 100.11 0 0 1 100 100Zm-8 0a92 92 0 1 0-92 92a92.1 92.1 0 0 0 92-92Z"/></svg>
+                                                    </p>
+                                                </button>                                                
+                                            </div>
+                                            <div class="h-50">
+                                                <div class="d-flex" style="position: absolute; bottom: 5vh; right: 5vh;">
+                                                    <a href="#">
+                                                        <img src="img/facebook.webp" class="socialmedia">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="img/instagram.webp" class="socialmedia">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="img/linkedin.webp" class="socialmedia">
+                                                    </a>
+                                                    <a href="#">
+                                                        <img src="img/youtube.webp" class="socialmedia">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -198,12 +228,15 @@
                     </div>
                     <a href="#">
                         <div data-aos="fade-right" class="d-flex align-items-center justify-content-start">
-                            <div class="link text-start">
-                                <p class="brt m05tb">
-                                    LEARN MORE
-                                </p>
+                            <div class="text-start m2">
+                                <a href="about.html">
+                                    <h2>
+                                        <span class="bt link fwt">
+                                            Learn More
+                                        </span>
+                                    </h2>
+                                </a>
                             </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g transform="rotate(90 8 8)"><path fill="currentColor" fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/></g></svg>
                         </div>
                     </a>
                 </div>
@@ -287,17 +320,25 @@
         <div class="fluid-container h-100 w-100 bg-b">
             <div class="container h-100">
                 <div class="row w-100 align-items-center align-items-left">
-                    <div class="col-6 text-start">
-                        <h2>
-                            Featured Project
-                        </h2>
+                    <div data-aos="fade-right" class="col-6 text-start link-view">
+                        <h1>
+                            <span class="wt">
+                                Featured Project
+                            </span>
+                        </h1>
                     </div>
                     <div class="col-6 text-end link-view">
-                        <a href="project.html">
-                            <h2 class="wt">
-                                View All
-                            </h2>
-                        </a>
+                            <div data-aos="fade-left" class="d-flex align-items-center justify-content-end">
+                                <div class="text-start">
+                                    <a href="project.html">
+                                        <h2>
+                                            <span class="wt contactus fwt">
+                                                View All
+                                            </span>
+                                        </h2>
+                                    </a>
+                                </div>
+                            </div>
                     </div>
                 </div>
                 <div class="row h-100 align-items-center color-w img-project" data-aos="fade-up">
@@ -366,25 +407,31 @@
                     <div class="row align-items-center">
                         <div class="carousel container" data-flickity='{ "wrapAround": true, "autoPlay": true}'>
                             <div class="carousel-cell">
-                                <img src="img/cliente1.webp" class="cimg">
+                                <img src="img/cliente1.webp" class="cimg" alt="Dubai South">
                             </div>
                             <div class="carousel-cell">
-                                <img src="img/cliente2.webp" class="cimg">
+                                <img src="img/cliente2.webp" class="cimg" alt="Dubai Hills">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="img/cliente3.webp" class="cimg" alt="Emaar">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="img/cliente4.webp" class="cimg" alt="Kepinski">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="img/cliente5.webp" class="cimg" alt="DAMAC">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="img/cliente6.webp" class="cimg"  alt="AWR">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="img/cliente7.webp" class="cimg"  alt="Georg Jensen">
                             </div>
                             <div class="carousel-cell">
                                 <img src="img/cliente3.webp" class="cimg">
                             </div>
                             <div class="carousel-cell">
                                 <img src="img/cliente4.webp" class="cimg">
-                            </div>
-                            <div class="carousel-cell">
-                                <img src="img/cliente5.webp" class="cimg">
-                            </div>
-                            <div class="carousel-cell">
-                                <img src="img/cliente6.webp" class="cimg">
-                            </div>
-                            <div class="carousel-cell">
-                                <img src="img/cliente7.webp" class="cimg">
                             </div>
                         </div>
                     </div>
@@ -401,6 +448,13 @@
             <div class="row h-100 align-items-center">
                 <div class="row align-items-center">
                     <div class="container align-items-center text-center">
+                        <div class="col-6 text-start wt fwt m2b" data-aos="fade-right">
+                            <h6>
+                                <span>
+                                    Ready to create your space together.
+                                </span>
+                            </h6>
+                        </div>
                         <div class="col-12 text-start" data-aos="fade-right">
                                 <a href="contact.html">
                                     <h2>
@@ -432,82 +486,116 @@
             <div class="row h-100 align-items-center">
                 <div class="row align-items-center">
                     <div class="row text-start">
-                        <div class="col-6">
-                            <img src="img/footer.webp" alt="" style="height: 5vh;">
+                        <div class="col-3">
+                            <img src="img/footer.webp" alt="" style="height: 5vh;" class="m05">
+                            <p class="m05 m2">
+                                CONNECT WITH US
+                            </p>
+                            <div class="d-flex">
+                                <a href="https://www.facebook.com/p/JR-Design-100067212375455/" alt="Facebook" class="m05r">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5Z"/></svg>
+                                </a>
+                                <a href="https://www.instagram.com/jrdesigndxb/" alt="Instagram" class="m05r">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248a4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008a3.004 3.004 0 0 1 0 6.008z"/><circle cx="16.806" cy="7.207" r="1.078" fill="currentColor"/><path fill="currentColor" d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42a4.6 4.6 0 0 0-2.633 2.632a6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71c0 2.442 0 2.753.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632a6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419a4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186c.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688a2.987 2.987 0 0 1-1.712 1.711a4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055c-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311a2.985 2.985 0 0 1-1.719-1.711a5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654c0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311a2.991 2.991 0 0 1 1.712 1.712a5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655c0 2.436 0 2.698-.043 3.654h-.011z"/></svg>
+                                </a>
+                                <a href="https://www.linkedin.com/company/jr-design-uae/about/" alt="Linkedin" class="m05r">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
+                                </a>
+                                <a href="#" alt="Youtube" class="m05r">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="m10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73Z"/></svg>
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-2">
+                        <div class="col-3">
+                            <p class="m05">
+                                EXPLORE
+                            </p>
                             <a href="about.html">
-                                <p class="m05a">
-                                    ABOUT
+                                <p class="fwt">
+                                    About
                                 </p>
                             </a>
                             <a href="project.html">
-                                <p class="m05a">
-                                    PROJECTS
+                                <p class="fwt">
+                                    Projects
                                 </p>
                             </a>
                             <a href="service.html">
-                                <p class="m05a">
-                                    SERVICES
+                                <p class="fwt">
+                                    Services
                                 </p>
                             </a>
                             <a href="contact.html">
-                                <p class="m05a">
-                                    CONTACT
+                                <p class="fwt">
+                                    Contact
                                 </p>
                             </a>
                         </div>
-                        <div class="col-2">
-                            <p class="m05a">
-                                ADDRESS
+                        <div class="col-3">
+                            <p class="m05">
+                                GET IN TOUCH
                             </p>
-                            <p class="m05a">
-                                52, 22nd StreetAl Quoz Industrial Area 2, Dubai
+                            <p class="fwt">
+                                04 388 1999
+                            </p>
+                            <p class="fwt">
+                                info@jrdesignconsultancy.com
+                            </p>
+                            <p class="m05 m1t">
+                                OFFICE HOUR
+                            </p>
+                            <p class="fwt">
+                                MON-FRI
+                            </p>
+                            <p class="fwt">
+                                9:00AM - 6:00PM
                             </p>
                         </div>
-                        <div class="col-2">
-                            <p class="m05a">
-                                EMAIL
+                        <div class="col-3">
+                            <p class="m05">
+                                OFFICE
                             </p>
-                            <p class="m05a">
-                                info@jrdesign.ae
+                            <p class="fwt">
+                                Office No. 399, XYZ
+                            </p>
+                            <p class="fwt">
+                                4th Floor, Dubai Hills, UAE
+                            </p>
+                            <p class="fwt">
+                                P.O Box: 1234445
                             </p>
                         </div>
+                        <hr class="m5tb">
                     </div>
                     <div class="row text-start">
                         <div class="col-6">
-                            <p class="m05a">
-                                © 2023 BY JRDESIGN
+                            <p class="m05 fwt">
+                                © 2023, JR DESIGN - INTERIOR. ARCHITECTURE. CONSULTANT
                             </p>
                         </div>
-                        <div class="col-1">
-                            <a href="about.html">
-                                <img src="img/youtube.webp" alt="" style="height: 5vh;">
-                            </a>
-                        </div>
-                        <div class="col-1">
-                            <a href="https://www.linkedin.com/company/jr-design-uae/about/">
-                                <img src="img/linkedin.webp" alt="" style="height: 5vh;">
-                            </a>
-                        </div>
-                        <div class="col-1">
-                            <a href="https://www.facebook.com/p/JR-Design-100067212375455/">
-                                <img src="img/facebook.webp" alt="" style="height: 5vh;">
-                            </a>
-                        </div>
-                        <div class="col-1">
-                            <a href="https://www.instagram.com/jrdesigndxb/">
-                                <img src="img/instagram.webp" alt="" style="height: 5vh;">
-                            </a>
-                        </div>
                         <div class="col-2">
-                            <!-- 
-                            <a href="https://mediaonclick.me/">
-                                <p class="m05a">
-                                    Made by MediaOnClick
+
+                        </div>
+                        <div class="col-1 fwt">
+                            <a href="legal.html">
+                                <p>
+                                    LEGAL
                                 </p>
-                            </a> 
-                             -->
+                            </a>
+                        </div>
+                        <div class="col-1 fwt">
+                            <a href="legal.html">
+                                <p>
+                                    NOTICES
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-2 fwt">
+                            <a href="legal.html">
+                                <p>
+                                    PRIVACY POLICIES
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
