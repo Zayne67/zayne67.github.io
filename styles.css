@@ -808,6 +808,9 @@ button:focus{
   .m2b{
     margin-bottom: 1em;
   }
+  .m1tb{
+    margin: 0.5em 0em 0.5em 0em;
+  }
   .m2{
     margin-top: 2em;
   }
