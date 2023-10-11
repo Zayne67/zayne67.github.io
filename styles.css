@@ -207,6 +207,9 @@ a:hover{
   background-position: center;
   background-size: cover;
 }
+img{
+  max-height: 100vh;
+}
 .introduction{
   top: 0;
   width: 100vw;
@@ -764,6 +767,9 @@ button:focus{
   }
 }
 @media only screen and (max-width: 1450.98px){
+  h1{
+    font-size: 40px;
+  }
   .form-size{
     width: 75% !important;
   }
@@ -771,7 +777,17 @@ button:focus{
     display: none;
   }
   .who-is-jr{
-    width: 30em;
+    width: 25em;
+  }
+  .m2b{
+    margin-bottom: 2em;
+  }
+  .m2{
+    margin-top: 2em;
+  }
+  .link-view{
+    margin-top: 0em;
+    margin-bottom: -10em;
   }
   
 }
