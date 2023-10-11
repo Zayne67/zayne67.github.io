@@ -793,17 +793,23 @@ button:focus{
 }
 @media only screen and (max-width: 1199.98px){ 
   h1{
-    font-size: 40px;
+    font-size: 35px;
   }
   p{
     font-size: 14px;
   }
   .who-is-jr{
-    width: 30em;
+    width: 25em;
   }
   .link-view{
     margin-top: 3em;
     margin-bottom: -3em;
+  }
+  .m2b{
+    margin-bottom: 1em;
+  }
+  .m2{
+    margin-top: 2em;
   }
   .md-hidden{
     display: none;
