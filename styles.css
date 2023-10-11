@@ -534,6 +534,9 @@ button:focus{
   align-items: center;
   z-index: 200;
 }
+.fixed-top{
+  z-index: 199;
+}
 .first{
   position: absolute;
   z-index: 201;
