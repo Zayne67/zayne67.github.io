@@ -870,6 +870,9 @@ button:focus{
   .full{
     height: 100vh !important;
   }
+  figure{
+    text-align: -webkit-center;
+  }
 }
 @media only screen and (max-height: 540px){ 
   h1{
