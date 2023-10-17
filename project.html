@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JR DESIGN</title>
-    <link rel="icon" type="image/x-icon" href="img/icon.webp">
-    
-    <!-- Online Css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+
+    <!-- /**ANCHOR - Online CSS -->
+    <link alt="Bootstrap-V.5.0.2" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,36 +14,31 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
-
-    <!-- Offline Css -->
-    <link rel="stylesheet" href="styles.css">
-
+    <!-- /**ANCHOR - Offline CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="h-100 w-100">
-
-    <!-- Loading Splash time -->
-    <div class="loading-screen" style="display: none;">
-        <img src="img/jrintro.webp" width="400px">
-        <div class="fill_1"></div>
-        <div class="fill_2"></div>
-        <div class="first">
-        </div>
+    <!-- /**ANCHOR - Image Pre Loader -->
+    <div class="preloader-img">
+        <img src="img/header1.webp" alt="">
+        <img src="img/header2.webp" alt="">
+        <img src="img/header3.webp" alt="">
+        <img src="img/header4.webp" alt="">
+        <img src="img/header5.webp" alt="">
     </div>
+    <!-- /**ANCHOR - Splash Time -->
+    <div class="loading-screen">
 
-    <!-- Custom Cursor-->
-    <div class="cursor"></div>
-
-    <!-- Navigation Bar -->
+    </div>
+    <!-- /**ANCHOR - Navigation Bar -->
     <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <div class="row align-items-center w-100">
-                <div class="col-4">
-                    <p class="wto">
-                        <span>EN</span><span>&#160|&#160</span><span>AR</span>  
-                    </p>
+        <div class="fluid-container w-100">
+            <div class="row w-100 align-items-center">
+                <div class="col-4 text-white">
+                    <span class="eng">EN</span><span class="or">&#160|&#160</span><span class="ar">AR</span>
                 </div>
                 <div class="col-4 text-center">
-                    <img onclick="home()" src="img/jrlogo.webp" class="mx-auto d-block">
+                    <img src="img/jrlogo.webp" alt="navigation-logo" class="navigation-logo mx-auto img-link">
                 </div>
                 <div class="col-4 text-end">
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -53,466 +47,428 @@
                 </div>
             </div>
             <div class="offcanvas offcanvas-end text-bg-light h-100 w-100" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel" aria-modal="true" role="dialog">
-                    <div class="fluid-container h-100">
-                        <div class="row h-100 align-items-start">
-                            <div class="col-6">
-                                <img id="menu" src="img/menu-home.webp" class="img2">
-                            </div>
-                            <div class="col-6 h-100">
-                                <div class="row h-100">
-                                    <div class="col-6 align-self-end">
-                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                            <li class="nav-item">
-                                                <div class="nav-link">
-                                                    <h1 class="m05a bto">
-                                                        <span onmouseover="about()">
-                                                            <a href="about.html">
-                                                                ABOUT
-                                                            </a>
-                                                        </span>
-                                                    </h1>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item">
-                                                <div class="nav-link">
-                                                    <h1 class="m05a bto">
-                                                        <span onmouseover="project()">
-                                                            <a href="project.html">
-                                                                PROJECTS
-                                                            </a>
-                                                        </span>
-                                                    </h1>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item">
-                                                <div class="nav-link">
-                                                    <h1 class="m05a bto">
-                                                        <span onmouseover="service()">
-                                                            <a href="service.html">
-                                                                SERVICES
-                                                            </a>
-                                                        </span>
-                                                    </h1>
-                                                </div>
-                                            </li>
-                                            <li class="nav-item">
-                                                <div class="nav-link">
-                                                    <h1 class="m05a bto">
-                                                        <span onmouseover="contact()">
-                                                            <a href="contact.html">
-                                                                CONTACT
-                                                            </a>
-                                                        </span>
-                                                    </h1>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-6 align-items-left text-end">
-                                            <div class="h-50">
-                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
-                                                    <p class="d-flex align-items-center m3a">
-                                                        <span>
-                                                            Close
-                                                        </span>    
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256"><path fill="currentColor" d="M162.83 98.83L133.66 128l29.17 29.17a4 4 0 0 1-5.66 5.66L128 133.66l-29.17 29.17a4 4 0 0 1-5.66-5.66L122.34 128L93.17 98.83a4 4 0 0 1 5.66-5.66L128 122.34l29.17-29.17a4 4 0 1 1 5.66 5.66ZM228 128A100 100 0 1 1 128 28a100.11 100.11 0 0 1 100 100Zm-8 0a92 92 0 1 0-92 92a92.1 92.1 0 0 0 92-92Z"/></svg>
-                                                    </p>
-                                                </button>                                                
+                <div class="fluid-container h-100">
+                    <div class="row h-100 align-items-start">
+                        <div class="col-4">
+                            <img id="menu" src="img/menu-home.webp" class="menu-img">
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="row h-100">
+                                <div class="col-md-8 col-6 align-self-end">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item m1b">
+                                            <div class="nav-link">
+                                                <h1>
+                                                    <span onmouseover="about()">
+                                                        <a href="about.html" class="text-black atext text-size">
+                                                            ABOUT
+                                                        </a>
+                                                    </span>
+                                                </h1>
                                             </div>
-                                            <div class="h-50">
-                                                <div class="d-flex" style="position: absolute; bottom: 5vh; right: 5vh;">
-                                                    <a href="#">
-                                                        <img src="img/facebook.webp" class="socialmedia">
-                                                    </a>
-                                                    <a href="#">
-                                                        <img src="img/instagram.webp" class="socialmedia">
-                                                    </a>
-                                                    <a href="#">
-                                                        <img src="img/linkedin.webp" class="socialmedia">
-                                                    </a>
-                                                    <a href="#">
-                                                        <img src="img/youtube.webp" class="socialmedia">
-                                                    </a>
-                                                </div>
+                                        </li>
+                                        <li class="nav-item m1b">
+                                            <div class="nav-link">
+                                                <h1>
+                                                    <span onmouseover="project()">
+                                                        <a href="project.html" class="text-black atext text-size">
+                                                            PROJECTS
+                                                        </a>
+                                                    </span>
+                                                </h1>
                                             </div>
-                                    </div>
+                                        </li>
+                                        <li class="nav-item m1b">
+                                            <div class="nav-link">
+                                                <h1>
+                                                    <span onmouseover="service()">
+                                                        <a href="service.html" class="text-black atext text-size">
+                                                            SERVICES
+                                                        </a>
+                                                    </span>
+                                                </h1>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item m20b">
+                                            <div class="nav-link">
+                                                <h1>
+                                                    <span onmouseover="contact()">
+                                                        <a href="contact.html" class="text-black atext text-size">
+                                                            CONTACT
+                                                        </a>
+                                                    </span>
+                                                </h1>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <h4 class="opensans w300 m1b">
+                                        <a href="#" class="text-black m1r atext">
+                                            Legal
+                                        </a>
+                                        <a href="#" class="text-black m1r atext">
+                                            Notices
+                                        </a>
+                                        <a href="#" class="text-black m1r atext">
+                                            Privacy Policies
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="col-md-4 col-6 text-end">
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
+                                        <p class="d-flex align-items-center m2all">
+                                            <span class="text-black">
+                                                Close
+                                            </span>    
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256"><path fill="currentColor" d="M162.83 98.83L133.66 128l29.17 29.17a4 4 0 0 1-5.66 5.66L128 133.66l-29.17 29.17a4 4 0 0 1-5.66-5.66L122.34 128L93.17 98.83a4 4 0 0 1 5.66-5.66L128 122.34l29.17-29.17a4 4 0 1 1 5.66 5.66ZM228 128A100 100 0 1 1 128 28a100.11 100.11 0 0 1 100 100Zm-8 0a92 92 0 1 0-92 92a92.1 92.1 0 0 0 92-92Z"/></svg>
+                                        </p>
+                                    </button>    
+                                    <h4 class="m90t d-flex">
+                                        <a href="#" class="m05r">
+                                            <svg alt="Facebook" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="black" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                                        </a>
+                                        <a href="https://www.instagram.com/jrdesign.uae/" class="m05r">
+                                            <svg alt="Instagram" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="black" d="M13.028 2.001a78.82 78.82 0 0 1 2.189.022l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.154a4.908 4.908 0 0 1 1.153 1.771c.247.637.415 1.364.465 2.428c.012.266.022.488.03.712l.006.194a79 79 0 0 1 .023 2.188l.001.746v1.31a78.836 78.836 0 0 1-.023 2.189l-.006.194c-.008.224-.018.445-.03.712c-.05 1.064-.22 1.79-.466 2.427a4.884 4.884 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-.267.012-.488.022-.712.03l-.194.006a79 79 0 0 1-2.189.023l-.746.001h-1.309a78.836 78.836 0 0 1-2.189-.023l-.194-.006a60.64 60.64 0 0 1-.712-.03c-1.064-.05-1.79-.22-2.428-.466a4.89 4.89 0 0 1-1.771-1.153a4.904 4.904 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.427a74.367 74.367 0 0 1-.03-.712l-.005-.194A79.053 79.053 0 0 1 2 13.028v-2.056a78.82 78.82 0 0 1 .022-2.188l.007-.194c.008-.224.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.88 4.88 0 0 1 3.68 3.68a4.897 4.897 0 0 1 1.77-1.155c.638-.247 1.363-.415 2.428-.465l.712-.03l.194-.005A79.053 79.053 0 0 1 10.972 2h2.056Zm-1.028 5A5 5 0 1 0 12 17a5 5 0 0 0 0-10Zm0 2A3 3 0 1 1 12.001 15a3 3 0 0 1 0-6Zm5.25-3.5a1.25 1.25 0 0 0 0 2.498a1.25 1.25 0 0 0 0-2.5Z"/></svg>
+                                        </a>
+                                        <a href="#" class="m05r">
+                                            <svg alt="Linkedin" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="black" d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2ZM8.09 18.74h-3v-9h3ZM6.59 8.48a1.56 1.56 0 1 1 0-3.12a1.57 1.57 0 1 1 0 3.12Zm12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06Z"/></svg>
+                                        </a>
+                                        <a href="#" class="m05r">
+                                            <svg alt="Youtube" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="black" fill-rule="evenodd" d="M6.989 4.89a64.248 64.248 0 0 1 10.022 0l2.24.176a2.725 2.725 0 0 1 2.476 2.268c.517 3.09.517 6.243 0 9.332a2.725 2.725 0 0 1-2.475 2.268l-2.24.175a64.24 64.24 0 0 1-10.023 0l-2.24-.175a2.725 2.725 0 0 1-2.476-2.268a28.315 28.315 0 0 1 0-9.332a2.725 2.725 0 0 1 2.475-2.268l2.24-.175ZM10 14.47V9.53a.3.3 0 0 1 .454-.257l4.117 2.47a.3.3 0 0 1 0 .514l-4.117 2.47A.3.3 0 0 1 10 14.47Z" clip-rule="evenodd"/></svg>
+                                        </a>
+                                    </h4>                                      
                                 </div>
                             </div>
                         </div>
                     </div>
-              </div>
+                </div>
+            </div>
         </div>
     </nav>
-
-    <!-- Content Wrapper-->
-    <div class="h-100 w-100">
-
-        <!-- Introduction Contents-->
-        <div class="fluid-container h-100 projectrow">
-            <div class="row align-items-center h-100">
-                <div class="col-md-6 text-center" >
+    <!-- /**ANCHOR - Body 8 -->
+    <div class="fluid-container h-100 body8">
+        <div class="row align-items-center h-100">
+            <div class="col-md-6 col-12">
+                <div class="text-width mx-auto">
                     <a href="villa-al-tayer.html">
-                        <figure class="h-50 justify-content-center align-items-center text-center">
-                            <img src="img/project1-1.webp" class="mx-autoprj">
-                        </figure>
-                        <h1>VILLA AL TAYER</h1>
-                        <p>RESIDENTIAL</p>
-                    </a>
-                </div>
-                <div class="col-md-6 text-center" >
-                    <div class="h-100 w-100">
-                        <img src="img/project1.webp" class="project-1">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="fluid-container bg-b h-100 projectrow">
-            <div class="row align-items-center h-100">
-                <div class="col-md-6 text-center" >
-                    <div class="h-100 w-100">
-                        <img src="img/project2.webp" class="project-1">
-                    </div>
-                </div>
-                <div class="col-md-6 text-center" >
-                    <a href="dubai-police-academy.html">
-                        <figure class="h-50 w-100 justify-content-center align-items-center text-center">
-                        <img src="img/project2-1.webp" class="mx-autoprj">
-                        </figure>
-                        <h1 class="wt">DUBAI POLICE ACADEMY</h1>
-                        <p class="wt">GOVERNMENT</p>
-                    </a>
-                    
-                </div>
-            </div>
-        </div>
-
-        <div class="fluid-container h-100 projectrow">
-            <div class="row align-items-center h-100" >
-                <div class="col-md-6 text-center">
-                    <a href="corporate-hq.html">
-                        <figure class="h-50 w-100 justify-content-center align-items-center text-center">
-                        <img src="img/project3-1.webp" class="mx-autoprj">
-                        </figure>
-                        <h1>CORPORATE HQ</h1>
-                        <p>CORPORATE</p>
-                    </a>
-                </div>
-                <div class="col-md-6 text-center" >
-                    <div class="h-100 w-100">
-                        <img src="img/project3.webp" class="project-1">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="container">
-          </div>
-
-        <!-- Description for Residential - Restaurant -->
-        <div class="fluid-container h-100 bg-b">
-            <div class="container h-100">
-                <div class="row w-100 align-items-center align-items-left">
-                    <div  class="col-6 text-start link-view">
-                        <h1>
-                            <span class="wt">
-                                Featured Project
+                        <img src="img/project1-1.webp" alt="">
+                    <div>
+                        <h1 class="text-center">
+                            <span>
+                                VILLA AL TAYER
                             </span>
                         </h1>
                     </div>
-                    <div class="col-6 text-end link-view">
-                            <div  class="d-flex align-items-center justify-content-end">
-                                <div class="text-start">
-                                    <a href="project.html">
-                                        <p>
-                                            <span class="wt contactus fwt">
-                                                View All
-                                            </span>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
+                    <div>
+                        <p class="bto text-center">
+                            <span>
+                                RESIDENTIAL
+                            </span>
+                        </p>
                     </div>
                 </div>
-                <div class="row h-100 align-items-center color-w img-project" >
-                    <div class="box col-4">
-                        <div class="imgBx">
-                          <img src="img/project1.webp">
-                        </div>
-                        <div class="content">
-                          <div>
-                            <h2>
-                                Villa Al Tayer
-                            </h2>
-                            <p>
-                                Residential
-                            </p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="box col-4">
-                        <div class="imgBx">
-                          <img src="img/project2.webp">
-                        </div>
-                        <div class="content">
-                          <div>
-                            <h2>
-                                Dubai Police Academy
-                            </h2>
-                            <p>
-                                Government
-                            </p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="box col-4">
-                        <div class="imgBx">
-                          <img src="img/project3.webp">
-                        </div>
-                        <div class="content">
-                          <div>
-                            <h2>
-                                Corporate HQ
-                            </h2>
-                            <p>
-                                Corporate
-                            </p>
-                          </div>
-                        </div>
-                    </div>
+                    </a>
+            </div>
+            <div class="col-md-6 col-12 sm-hidden">
+                <div class="text-center">
+                    <img loading="lazy" class="image-max mx-auto villa-proj sm-hidden">
                 </div>
             </div>
         </div>
-
-
-
-
-
-         <!-- Contact Us -->
-        <div class="fluid-container h-50 pbg">
-            <div class="row h-100 align-items-center">
-                <div class="row align-items-center">
-                    <div class="container align-items-center text-center">
-                        <div class="col-md-6 col-12 text-start wt fwt m2b" >
-                            <h6>
-                                <span>
-                                    Ready to create your space together.
-                                </span>
-                            </h6>
-                        </div>
-                        <div class="col-12 text-start" >
-                                <a href="contact.html">
+    </div>
+    <!-- /**ANCHOR - Body 8 -->
+    <div class="fluid-container h-100 body8 bg-b">
+        <div class="row align-items-center h-100">
+            <div class="col-md-6 col-12 sm-hidden">
+                <div class="text-center">
+                    <img loading="lazy" class="image-max mx-auto dubai-proj sm-hidden">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="text-width mx-auto">
+                    <a href="dubai-police-academy.html">
+                        <img src="img/project2-1.webp" alt="">
+                    <div>
+                        <h1 class="text-center text-white">
+                            <span>
+                                DUBAI POLICE ACADEMY
+                            </span>
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="text-white-op text-center">
+                            <span>
+                                GOVERNMENT
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                    </a>
+            </div>
+        </div>
+    </div>
+    <!-- /**ANCHOR - Body 8 -->
+    <div class="fluid-container h-100 body8">
+        <div class="row align-items-center h-100">
+            <div class="col-md-6 col-12">
+                <div class="text-width mx-auto">
+                    <a href="corporate-hq.html">
+                        <img src="img/project3-1.webp" alt="">
+                    <div>
+                        <h1 class="text-center">
+                            <span>
+                                CORPORATE HQ
+                            </span>
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="bto text-center">
+                            <span>
+                                CORPORATE
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                    </a>
+            </div>
+            <div class="col-md-6 col-12 sm-hidden">
+                <div class="text-center">
+                    <img loading="lazy" class="image-max mx-auto corporate-proj sm-hidden">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /**ANCHOR - Body 4 -->
+    <div class="fuid-container h-100 dark-bg body4">
+        <div class="row w-100 align-items-center align-items-left">
+            <div class="col-6 text-start featured-link">
+                <h1 class="text-white m1l">
+                    Featured Project
+                </h1>
+            </div>
+            <div class="col-6 text-end featured-link">
+                <div  class="d-flex align-items-center justify-content-end">
+                    <div class="text-start">
+                        <a href="project.html">
+                            <p class="contactus text-white m1r">
+                                View All
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-100">
+                <div class="col-12 text-center d-flex justify-content-center">
+                    <div class="carousel container" data-flickity='{ "wrapAround": true, "autoPlay": true, "draggable": true}'>
+                        <div class="carousel-cell" class="project">
+                            <a href="villa-al-tayer.html">
+                                <img src="img/project1.webp" alt="" class="image-project">
+                                <div class="content text-white">
+                                    <h2>
+                                        Villa Al Tayer
+                                    </h2>
                                     <p>
-                                        <span class="wt contactus fwt">
-                                            Contact Us
-                                        </span>
+                                        Residential
                                     </p>
-                                </a>
-                        </div>
-                        <div class="col-md-6 col-12 text-start wt fwt m2" >
-                            <p>
-                                <span>
-                                    Turning Dreams into Stunning Interiors: Where Imagination Meets Precision
-                                    JR Design is your gateway to a world of exceptional interior design.
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-         <!-- Link -->
-        <div class="container h-50">
-            <div class="row h-100 align-items-center">
-                <div class="row align-items-center">
-                    <div class="row text-start">
-                        <div class="col-12 col-md-3 text-md-start text-center">
-                            <img src="img/footer.webp" alt="" style="height: 5vh;" class="m05 sm-hidden">
-                            <p class="m05 m2 text-md-start text-center">
-                                CONNECT WITH US
-                            </p>
-                            <div class="d-flex justify-content-md-start justify-content-center">
-                                <a href="https://www.facebook.com/p/JR-Design-100067212375455/" alt="Facebook" class="m05r">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5Z"/></svg>
-                                </a>
-                                <a href="https://www.instagram.com/jrdesigndxb/" alt="Instagram" class="m05r">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248a4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008a3.004 3.004 0 0 1 0 6.008z"/><circle cx="16.806" cy="7.207" r="1.078" fill="currentColor"/><path fill="currentColor" d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42a4.6 4.6 0 0 0-2.633 2.632a6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71c0 2.442 0 2.753.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632a6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419a4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186c.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688a2.987 2.987 0 0 1-1.712 1.711a4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055c-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311a2.985 2.985 0 0 1-1.719-1.711a5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654c0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311a2.991 2.991 0 0 1 1.712 1.712a5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655c0 2.436 0 2.698-.043 3.654h-.011z"/></svg>
-                                </a>
-                                <a href="https://www.linkedin.com/company/jr-design-uae/about/" alt="Linkedin" class="m05r">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
-                                </a>
-                                <a href="#" alt="Youtube" class="m05r">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="m10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73Z"/></svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-12 sm-f text-md-start text-center">
-                            <p class="m05">
-                                EXPLORE
-                            </p>
-                            <a href="about.html">
-                                <p class="fwt">
-                                    About
-                                </p>
-                            </a>
-                            <a href="project.html">
-                                <p class="fwt">
-                                    Projects
-                                </p>
-                            </a>
-                            <a href="service.html">
-                                <p class="fwt">
-                                    Services
-                                </p>
-                            </a>
-                            <a href="contact.html">
-                                <p class="fwt">
-                                    Contact
-                                </p>
+                                </div>
                             </a>
                         </div>
-                        <div class="col-md-3 col-12 sm-b text-md-start text-center">
-                            <p class="m05">
-                                GET IN TOUCH
-                            </p>
-                            <p class="fwt">
-                                04 388 1999
-                            </p>
-                            <p class="fwt">
-                                info@jogaram.com
-                            </p>
-                            <p class="m05 m1t">
-                                OFFICE HOUR
-                            </p>
-                            <p class="fwt">
-                                MON-FRI
-                            </p>
-                            <p class="fwt">
-                                9:00AM - 6:00PM
-                            </p>
-                        </div>
-                        <div class="col-md-3 col-12 sm-b text-md-start text-center">
-                            <p class="m05">
-                                OFFICE
-                            </p>
-                            <p class="fwt">
-                                52, 22nd Street,
-                            </p>
-                            <p class="fwt">
-                                Al Quoz Industrial Area 2,
-                            </p>
-                            <p class="fwt">
-                                P.O Box: 282537
-                            </p>
-                        </div>
-                        <hr class="m5tb">
-                    </div>
-                    <div class="row text-start">
-                        <div class="col-md-6 col-12 text-md-start text-center">
-                            <p class="fwt">
-                                © 2023, JR DESIGN - INTERIOR. ARCHITECTURE. CONSULTANT
-                            </p>
-                        </div>
-                        <div class="col-md-1 col-12 text-md-start text-center fwt col-md-1">
-                            <a href="legal.html">
-                                <p>
-                                    LEGAL
-                                </p>
+                        <div class="carousel-cell" class="project">
+                            <a href="dubai-police-academy.html">
+                                <img src="img/project2.webp" alt="" class="image-project">
+                                <div class="content text-white">
+                                    <h2>
+                                        Dubai Police Academy
+                                    </h2>
+                                    <p>
+                                        Government
+                                    </p>
+                                </div>
                             </a>
                         </div>
-                        <div class="col-md-1 col-12 text-md-start text-center fwt col-md-2">
-                            <a href="legal.html">
-                                <p>
-                                    NOTICES
-                                </p>
-                            </a>
-                        </div>
-                        <div class="col-md-2 col-12 text-md-start text-center fwt col-md-3 col-lg-2">
-                            <a href="legal.html">
-                                <p>
-                                    PRIVACY POLICIES
-                                </p>
+                        <div class="carousel-cell" class="project">
+                            <a href="corporate-hq.html">
+                                <img src="img/project3.webp" alt="" class="image-project"> 
+                                <div class="content text-white">
+                                    <h2>
+                                        Corporate HQ
+                                    </h2>
+                                    <p>
+                                        Corporate
+                                    </p>
+                                </div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
     </div>
-        
+    <!-- /**ANCHOR - Body 5 -->
+    <div class="fluid-container h-50">
+        <div class="row h-100 align-items-center text-center">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <h1 class="font-xl text-center">
+                        <span>Clientele</span>
+                    </h1>
+                </div>
+                <div class="carousel container" data-flickity='{ "wrapAround": true, "autoPlay": true}'>
+                    <div class="carousel-cell">
+                        <img src="img/cliente1.webp" class="cimg" alt="Dubai South">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/cliente2.webp" class="cimg" alt="Dubai Hills">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/cliente3.webp" class="cimg" alt="Emaar">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/cliente4.webp" class="cimg" alt="Kepinski">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/cliente5.webp" class="cimg" alt="DAMAC">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/cliente6.webp" class="cimg"  alt="AWR">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/cliente7.webp" class="cimg"  alt="Georg Jensen">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/cliente3.webp" class="cimg">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="img/cliente4.webp" class="cimg">
+                    </div>
+                </div>
+            </div>
+        </div>  
     </div>
-</div>
-
-    </body>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script>
-        
-        window.addEventListener("load", function() {
-        document.querySelector(".loading-screen").style.display = "none";
-        });
-        // Loading Screen
-        const loadingScreen = document.querySelector('.loading-screen');
-
-        function showLoadingScreen() {
-            loadingScreen.style.display = 'flex';
-        }
-
-        function hideLoadingScreen() {
-            loadingScreen.style.display = 'none';
-        }
-
-        // Example usage:
-        showLoadingScreen();
-        setTimeout(hideLoadingScreen, 5000); // Hide loading screen after 5 Seconds / 5000
-        
-        // Doesnt allow to scroll down while loading screeen is active
-        window.addEventListener('scroll', function() {
-        if (loadingScreen.style.display === 'flex') {
-            window.scrollTo(0, 0);
-        }
-        });
-
-        // Variable for Image
-        var image = document.querySelector('#subdivision');
-        var menu = document.querySelector('#menu');
-
-        // Changine Image on Menu
-        function about() {
-        menu.src = 'img/menu-about.webp';
-        }
-        function project() {
-        menu.src = 'img/menu-project.webp';
-        }
-        function service() {
-        menu.src = 'img/menu-service.webp';
-        }
-        function contact() {
-        menu.src = 'img/menu-contact.webp';
-        }
-
-        // Link on Click
-        function home(){
-            window.open('index.html', '_self')
-        }
-        
-        document.querySelector('.img-link').addEventListener('click', function() {
-            window.open('index.html', '_self');
-        });
-    </script>
+    <!-- /**ANCHOR - Body 6 -->
+    <div class="fluid-container h-50 pbg">
+        <div class="m2l containter h-100">
+            <div class="row h-100">
+                <h1 class="butler align-self-end text-white">
+                    Ready to create your space together.
+                </h1>
+                <p class="align-self-center text-white">
+                    <a href="contact.html">
+                       <span class="text-white contactus">
+                            Contact Us
+                        </span> 
+                    </a>
+                    
+                </p>
+                <p class="text-white">
+                    Turning Dreams into Stunning Interiors: Where Imagination Meets Precision <br>
+                    JR Design is your gateway to a world of exceptional interior design.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- /**ANCHOR - Footer 7 -->
+    <div class="fluid-container h-50">
+        <div class="row h-100">
+            <div class="col-md-6 col-12 text-md-start text-center m3t">
+                <div class="m2l text-center footer">
+                    <img src="img/footer.webp" alt="" class="navigation-logo">
+                </div>
+            </div>
+            <div class="col-md-2 col-12 text-md-start text-center m3t">
+                <h4>
+                    Explore
+                </h4>
+                <a href="about.html" class="w300 m05t atext">
+                    About
+                </a><br>
+                <a href="project.html" class="w300 m05t atext">
+                    Projects
+                </a><br>
+                <a href="service.html" class="w300 m05t atext">
+                    Services
+                </a><br>
+                <a href="contact.html" class="w300 m05t atext">
+                    Contact
+                </a>
+            </div>
+            <div class="col-md-2 col-12 text-md-start text-center m3t">
+                <h4>
+                    Get In Touch
+                </h4>
+                <p class="w300">
+                    04 388 1999
+                </p>
+                <p class="w300">
+                    info@jogaram.com
+                </p>
+                <h4 class="m3t">
+                    Office Hour
+                </h4>
+                <p class="w300">
+                    Monday - Friday
+                </p>
+                <p class="w300">
+                    9:00AM - 6:00PM
+                </p>
+            </div>
+            <div class="col-md-2 col-12 text-md-start text-center m3t">
+                <div class="m2r">
+                    <h4>
+                        Office
+                    </h4>
+                    <p class="w300">
+                        52, 22nd Street,
+                        Al Quoz Industrial Area 2,
+                        P.O Box: 282537
+                    </p>
+                </div>
+                <h4 class="m3t">
+                    Connect With Us
+                </h4>
+                <h4 class="d-flex footer-social">
+                    <a href="#" class="m05r">
+                        <svg alt="Facebook" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="black" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/jrdesign.uae/" class="m05r">
+                        <svg alt="Instagram" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="black" d="M13.028 2.001a78.82 78.82 0 0 1 2.189.022l.194.007c.224.008.445.018.712.03c1.064.05 1.79.218 2.427.465c.66.254 1.216.598 1.772 1.154a4.908 4.908 0 0 1 1.153 1.771c.247.637.415 1.364.465 2.428c.012.266.022.488.03.712l.006.194a79 79 0 0 1 .023 2.188l.001.746v1.31a78.836 78.836 0 0 1-.023 2.189l-.006.194c-.008.224-.018.445-.03.712c-.05 1.064-.22 1.79-.466 2.427a4.884 4.884 0 0 1-1.153 1.772a4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-.267.012-.488.022-.712.03l-.194.006a79 79 0 0 1-2.189.023l-.746.001h-1.309a78.836 78.836 0 0 1-2.189-.023l-.194-.006a60.64 60.64 0 0 1-.712-.03c-1.064-.05-1.79-.22-2.428-.466a4.89 4.89 0 0 1-1.771-1.153a4.904 4.904 0 0 1-1.154-1.772c-.247-.637-.415-1.363-.465-2.427a74.367 74.367 0 0 1-.03-.712l-.005-.194A79.053 79.053 0 0 1 2 13.028v-2.056a78.82 78.82 0 0 1 .022-2.188l.007-.194c.008-.224.018-.446.03-.712c.05-1.065.218-1.79.465-2.428A4.88 4.88 0 0 1 3.68 3.68a4.897 4.897 0 0 1 1.77-1.155c.638-.247 1.363-.415 2.428-.465l.712-.03l.194-.005A79.053 79.053 0 0 1 10.972 2h2.056Zm-1.028 5A5 5 0 1 0 12 17a5 5 0 0 0 0-10Zm0 2A3 3 0 1 1 12.001 15a3 3 0 0 1 0-6Zm5.25-3.5a1.25 1.25 0 0 0 0 2.498a1.25 1.25 0 0 0 0-2.5Z"/></svg>
+                    </a>
+                    <a href="#" class="m05r">
+                        <svg alt="Linkedin" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="black" d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2ZM8.09 18.74h-3v-9h3ZM6.59 8.48a1.56 1.56 0 1 1 0-3.12a1.57 1.57 0 1 1 0 3.12Zm12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2A1.65 1.65 0 0 0 12.85 13a2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06Z"/></svg>
+                    </a>
+                    <a href="#" class="m05r">
+                        <svg alt="Youtube" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="black" fill-rule="evenodd" d="M6.989 4.89a64.248 64.248 0 0 1 10.022 0l2.24.176a2.725 2.725 0 0 1 2.476 2.268c.517 3.09.517 6.243 0 9.332a2.725 2.725 0 0 1-2.475 2.268l-2.24.175a64.24 64.24 0 0 1-10.023 0l-2.24-.175a2.725 2.725 0 0 1-2.476-2.268a28.315 28.315 0 0 1 0-9.332a2.725 2.725 0 0 1 2.475-2.268l2.24-.175ZM10 14.47V9.53a.3.3 0 0 1 .454-.257l4.117 2.47a.3.3 0 0 1 0 .514l-4.117 2.47A.3.3 0 0 1 10 14.47Z" clip-rule="evenodd"/></svg>
+                    </a>
+                </h4>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12 text-md-start text-center footer-border">
+                    <div class="m2l">
+                        <p class="w300">
+                            © 2023, JR DESIGN - INTERIOR. ARCHITECTURE. CONSULTANT
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 text-md-end text-center footer-border">
+                    <a href="#" class="w300 m05r atext">
+                        LEGAL
+                    </a>
+                    <a href="#" class="w300 m05r atext">
+                        NOTICES
+                    </a>
+                    <a href="#" class="w300 m2r atext">
+                        PRIVACY POLICIES
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<!-- /**ANCHOR - JS Script Online -->
+<script alt="flickity" src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script alt="data-aos" src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init()</script>
+<script alt="Bootstrap-V.5.0.2" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- /**ANCHOR - JS Script Offline -->
+<script src="js/menu.js"></script>
+<script src="js/link.js"></script>
 </html>
