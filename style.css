@@ -155,6 +155,9 @@ img{
     background-position: right;
   }
 }
+.footer-logo{
+  height: 20vh;
+}
 /*ANCHOR - Text */
 h1{
     font-size: 50px;
@@ -310,7 +313,7 @@ a{
 }
 /*ANCHOR - Outside Navigation */
 .navigation-logo{
-    height: 5em;
+    height: 6em;
 }
 .navigation-logo:hover{
     cursor: pointer;
@@ -1547,6 +1550,10 @@ a{
       margin-bottom: 1em;
     }
     .navigation-logo{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .footer-logo{
       margin-left: auto;
       margin-right: auto;
     }
